@@ -11,8 +11,10 @@
   "dependencies": {
     "@expo-google-fonts/nunito": "^0.2.3",
     "@react-native-async-storage/async-storage": "^2.1.0",
+    "axios": "^1.7.8",
     "expo": "~52.0.11",
     "expo-status-bar": "~2.0.0",
+    "lodash": "^4.17.21",
     "nativewind": "^4.1.23",
     "react": "18.3.1",
     "react-native": "0.76.3",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@types/lodash": "^4.17.13",
     "@types/react": "~18.3.12",
     "typescript": "^5.3.3"
   },
