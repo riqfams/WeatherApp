@@ -18,8 +18,6 @@ export default function App() {
   const [loading, setLoading] = useState(false)
 
   const handleLocation = async (loc: Location) => {
-    console.log("loc:", loc)
-
     setLoading(true)
     setLocation([])
 
@@ -28,7 +26,6 @@ export default function App() {
         cityName: loc.name,
         days: '7',
       });
-      console.log("got weather: ", data);
       setWeather(data);
       storeData('city', loc.name)
     } catch (error) {
@@ -62,7 +59,6 @@ export default function App() {
         cityName: myCity,
         days: '7',
       });
-      console.log("got my weather: ", data);
       setWeather(data);
     } catch (error) {
       console.error("Error fetching my weather data:", error);
